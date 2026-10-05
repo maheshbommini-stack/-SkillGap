@@ -1,0 +1,625 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap'
+);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background: #f5f3ed;
+
+  color: #181818;
+
+  font-family: "DM Sans", sans-serif;
+
+  min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+  height: 75px;
+
+  padding: 0 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #ddd9cf;
+
+  background: #f5f3ed;
+}
+
+.logo {
+
+  font-size: 24px;
+
+  font-weight: 800;
+}
+
+.logo span {
+
+  color: #ff694a;
+}
+
+.nav-label {
+
+  color: #77736a;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* MAIN */
+
+main {
+
+  width: min(1100px, 90%);
+
+  margin: auto;
+}
+
+
+/* HERO */
+
+.hero {
+
+  min-height: 420px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.eyebrow {
+
+  color: #ff694a;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+h1 {
+
+  font-size: clamp(48px, 7vw, 82px);
+
+  line-height: .98;
+
+  letter-spacing: -5px;
+}
+
+h1 span {
+
+  color: #ff694a;
+}
+
+.hero-description {
+
+  max-width: 520px;
+
+  margin-top: 25px;
+
+  color: #77736a;
+
+  line-height: 1.7;
+}
+
+
+/* ORB */
+
+.readiness-orb {
+
+  width: 240px;
+
+  height: 240px;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      #ff9b82,
+      #ff694a 55%,
+      #ffbca9
+    );
+
+  box-shadow:
+    20px 25px 60px #ff694a35;
+}
+
+.readiness-orb > div {
+
+  width: 145px;
+
+  height: 145px;
+
+  border-radius: 50%;
+
+  background: #f5f3ed;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.readiness-orb strong {
+
+  font-size: 34px;
+}
+
+.readiness-orb small {
+
+  margin-top: 5px;
+
+  color: #888;
+}
+
+
+/* INPUT PANEL */
+
+.input-panel {
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid #e4e0d7;
+
+  border-radius: 24px;
+
+  box-shadow: 0 20px 50px #00000008;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr auto;
+
+  gap: 25px;
+
+  align-items: end;
+}
+
+label {
+
+  display: block;
+
+  color: #77736a;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+
+/* SKILLS */
+
+.skills {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.skills button {
+
+  padding: 9px 13px;
+
+  border-radius: 30px;
+
+  border: 1px solid #ddd9cf;
+
+  background: #f5f3ed;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.skills button:hover {
+
+  border-color: #ff694a;
+}
+
+.skills button.active {
+
+  color: white;
+
+  background: #181818;
+
+  border-color: #181818;
+}
+
+
+/* SELECT */
+
+select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 9px;
+
+  border: 1px solid #ddd9cf;
+
+  background: #f5f3ed;
+
+  font-family: inherit;
+
+  outline: none;
+}
+
+
+/* BUTTON */
+
+.analyze-button {
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #ff694a;
+
+  color: white;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.analyze-button:hover {
+
+  background: #e9583c;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  padding: 25px 0;
+}
+
+.card {
+
+  padding: 28px;
+
+  background: white;
+
+  border: 1px solid #e4e0d7;
+
+  border-radius: 20px;
+}
+
+.card-label {
+
+  color: #99958c;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  font-weight: 800;
+}
+
+
+/* SCORE */
+
+.readiness-card {
+
+  text-align: center;
+}
+
+.score {
+
+  font-size: 76px;
+
+  font-weight: 700;
+
+  margin: 20px;
+}
+
+.progress {
+
+  height: 8px;
+
+  border-radius: 20px;
+
+  background: #eeeae1;
+
+  overflow: hidden;
+}
+
+.progress div {
+
+  height: 100%;
+
+  width: 0;
+
+  background: #ff694a;
+
+  transition: width 1s ease;
+}
+
+.message {
+
+  color: #888;
+
+  margin-top: 15px;
+
+  font-size: 13px;
+}
+
+
+/* MISSING */
+
+.missing {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.missing span {
+
+  padding: 10px 14px;
+
+  background: #fff0ec;
+
+  color: #df5439;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+}
+
+
+/* ROADMAP */
+
+.roadmap-card {
+
+  grid-column: span 2;
+}
+
+.roadmap-step {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid #eeeae1;
+}
+
+.roadmap-step:last-child {
+
+  border-bottom: none;
+}
+
+.roadmap-step b {
+
+  color: #ff694a;
+
+  min-width: 25px;
+}
+
+
+/* HISTORY */
+
+.history-section {
+
+  padding: 30px 0 80px;
+}
+
+.history-header {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.history-header h2 {
+
+  margin-top: 7px;
+}
+
+.history-button {
+
+  padding: 11px 15px;
+
+  background: white;
+
+  border: 1px solid #ddd9cf;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.history-item {
+
+  background: white;
+
+  border: 1px solid #e4e0d7;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  margin-bottom: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.history-item strong {
+
+  color: #ff694a;
+
+  font-size: 20px;
+}
+
+.history-item small {
+
+  display: block;
+
+  color: #999;
+
+  margin-top: 5px;
+}
+
+.empty-history {
+
+  color: #999;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+}
+
+
+/* TOAST */
+
+.toast {
+
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  background: #181818;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 9px;
+
+  transform: translateY(100px);
+
+  opacity: 0;
+
+  transition: .3s;
+}
+
+.toast.show {
+
+  transform: translateY(0);
+
+  opacity: 1;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+  .hero {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 60px 0;
+
+    gap: 50px;
+  }
+
+  .readiness-orb {
+
+    width: 180px;
+
+    height: 180px;
+  }
+
+  .readiness-orb > div {
+
+    width: 110px;
+
+    height: 110px;
+  }
+
+  .input-panel {
+
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-card {
+
+    grid-column: span 1;
+  }
+
+  .history-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+}
