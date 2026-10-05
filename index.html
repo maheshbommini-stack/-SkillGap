@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SkillGap | Career Intelligence</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    Skill<span>Gap</span>
+  </div>
+
+  <div class="nav-label">
+    CAREER INTELLIGENCE
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        YOUR CAREER • YOUR ROADMAP
+      </p>
+
+      <h1>
+        Turn your skills<br>
+        into your <span>future.</span>
+      </h1>
+
+      <p class="hero-description">
+        Discover what skills you're missing for your dream career
+        and get a personalized roadmap to reach your goal.
+      </p>
+
+    </div>
+
+
+    <div class="readiness-orb">
+
+      <div>
+
+        <strong id="heroScore">
+          0%
+        </strong>
+
+        <small>
+          READY
+        </small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INPUT PANEL -->
+
+  <section class="input-panel">
+
+    <div class="input-section">
+
+      <label>
+        YOUR CURRENT SKILLS
+      </label>
+
+      <div class="skills" id="skills">
+
+        <button data-skill="HTML">HTML</button>
+
+        <button data-skill="CSS">CSS</button>
+
+        <button data-skill="JavaScript">
+          JavaScript
+        </button>
+
+        <button data-skill="React">
+          React
+        </button>
+
+        <button data-skill="Node.js">
+          Node.js
+        </button>
+
+        <button data-skill="MongoDB">
+          MongoDB
+        </button>
+
+        <button data-skill="Python">
+          Python
+        </button>
+
+        <button data-skill="SQL">
+          SQL
+        </button>
+
+        <button data-skill="Git">
+          Git
+        </button>
+
+        <button data-skill="Docker">
+          Docker
+        </button>
+
+        <button data-skill="Figma">
+          Figma
+        </button>
+
+        <button data-skill="Linux">
+          Linux
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="career-section">
+
+      <label>
+        TARGET CAREER
+      </label>
+
+      <select id="career">
+
+        <option value="fullstack">
+          Full Stack Developer
+        </option>
+
+        <option value="frontend">
+          Frontend Developer
+        </option>
+
+        <option value="backend">
+          Backend Developer
+        </option>
+
+        <option value="data">
+          Data Analyst
+        </option>
+
+        <option value="uiux">
+          UI/UX Designer
+        </option>
+
+        <option value="devops">
+          DevOps Engineer
+        </option>
+
+      </select>
+
+    </div>
+
+
+    <button
+      class="analyze-button"
+      id="analyze">
+
+      ANALYZE MY SKILLS →
+
+    </button>
+
+  </section>
+
+
+  <!-- DASHBOARD -->
+
+  <section class="dashboard">
+
+
+    <div class="card readiness-card">
+
+      <p class="card-label">
+        CAREER READINESS
+      </p>
+
+      <div class="score">
+
+        <span id="score">
+          0
+        </span>%
+
+      </div>
+
+      <div class="progress">
+
+        <div id="progress"></div>
+
+      </div>
+
+      <p
+        id="message"
+        class="message">
+
+        Select your skills to begin.
+
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <p class="card-label">
+        MISSING SKILLS
+      </p>
+
+      <div
+        id="missing"
+        class="missing">
+
+        <span>
+          Waiting for analysis...
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="card roadmap-card">
+
+      <p class="card-label">
+        PERSONALIZED ROADMAP
+      </p>
+
+      <div id="roadmap">
+
+        <div class="roadmap-step">
+
+          <b>01</b>
+
+          <span>
+            Select your current skills
+          </span>
+
+        </div>
+
+        <div class="roadmap-step">
+
+          <b>02</b>
+
+          <span>
+            Choose your target career
+          </span>
+
+        </div>
+
+        <div class="roadmap-step">
+
+          <b>03</b>
+
+          <span>
+            Generate your roadmap
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HISTORY -->
+
+  <section class="history-section">
+
+    <div class="history-header">
+
+      <div>
+
+        <p class="card-label">
+          ANALYSIS HISTORY
+        </p>
+
+        <h2>
+          Your previous analyses
+        </h2>
+
+      </div>
+
+      <button
+        id="loadHistory"
+        class="history-button">
+
+        REFRESH HISTORY
+
+      </button>
+
+    </div>
+
+    <div id="history">
+
+      <p class="empty-history">
+        No analysis history yet.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<div
+  id="toast"
+  class="toast">
+
+  Analysis saved successfully.
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
